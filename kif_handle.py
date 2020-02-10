@@ -1,0 +1,148 @@
+from pyautogui import locateCenterOnScreen, typewrite, hotkey, click, moveTo
+from pyscreeze import ImageNotFoundException
+from selenium import webdriver
+import chromedriver_binary
+import bs4
+import requests
+import pyperclip
+from time import sleep
+
+# 棋譜を開く
+def openkif():
+    moveTo(45, 50)
+    sleep(1)
+    click(45, 50)
+    click(45, 50)
+    moveTo(45, 107)
+    click(45, 107)
+    sleep(1)
+    moveTo(483, 241)
+    sleep(1)
+    click(483, 241)
+    moveTo(728, 749)
+    sleep(1)
+    click(728, 749)
+    sleep(2)
+
+# 棋譜解析を行う
+def anakif():
+    moveTo(1224, 26)
+    click(1224, 26)
+    sleep(3)
+    moveTo(317, 47)
+    click(317, 47)
+    moveTo(317, 234)
+    click(317, 234)
+    sleep(1)
+    moveTo(755, 897)
+    click(755, 897)
+
+# 棋譜解析終了判定
+def finana():
+    while True:
+        try:
+            d = locateCenterOnScreen('OK.png', grayscale=True)
+            if not d ==None:
+                x, y = locateCenterOnScreen('OK.png', grayscale=True)
+                moveTo(x, y)
+                click(x, y)
+                break
+        except ImageNotFoundException:
+            sleep(10)
+
+# 解析済みファイル保存(.kif)
+def savekif():
+    moveTo(1224, 26)
+    click(1224, 26)
+    moveTo(45, 50, duration=0.01)
+    click(45, 50)
+    sleep(1)
+    moveTo(62, 184, duration=0.01)
+    click(62, 184)
+    sleep(1)
+    moveTo(810, 642, duration=0.01)
+    click(810, 644)
+    sleep(1)
+    hotkey('fn', 'end')
+    typewrite(['backspace', 'backspace', 'backspace', 'backspace', '_', 'a', 'n', 'a'], 0.04)
+    moveTo(735, 748, duration=0.01)
+    click(735, 748)
+    sleep(5)
+
+# 将棋ウォーズ棋譜検索から一番上の棋譜をダウンロード
+def dl_kif_top():
+    # google chromeで将棋ウォーズ棋譜検索を開く
+    browser = webdriver.Chrome()
+    browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
+
+    sleep(10)  # 10秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
+
+    # 一番上の棋譜の詳細ページへ飛ぶ
+    elem = browser.find_element_by_css_selector("button.button.arrow_icon.is-small")
+    elem.click()
+    elem = browser.find_element_by_css_selector("div.is-paddingless.has-link")
+    elem.click()
+
+    # 詳細ページのURLを取得
+    cur_url = browser.current_url
+    print(cur_url)
+
+    # bs4でKIFデータをテキストでコピー
+    r = requests.get(cur_url)
+    soup = bs4.BeautifulSoup(r.text, "html.parser")
+    web_text = soup.select('pre.pre-wrap')
+    dl_text = ''.join(str(web_text))
+    pyperclip.copy(dl_text)
+
+    # クリップボードのテキストを将棋所へ張り付け
+    moveTo(970, 1044)  # shogiGUIを開く
+    sleep(2)
+    click(970, 1044)
+    sleep(2)
+    '''
+    issue...Windowsアプリを直接呼ぶことができたら？
+        アプリがすでに起動しているを真として判定
+        -->True...既存ウインドウでアプリを呼ぶ
+        -->false...新規ウインドウでアプリを呼ぶ
+    '''
+    if type(dl_text) is str:  # テキストデータなのか、kifファイルか否かでT/F判定
+        moveTo(1224, 26)  # shogiGUIのウィンドウを触る
+        click(1224, 26)
+        sleep(1)
+        hotkey('ctrl', 'v')
+    else:
+        print("kifファイルではありません")
+
+    # ブラウザを閉じる
+    browser.quit()
+    print('ブラウザは閉じられました')
+
+# seleniumuでkif一括ダウンロード
+def dl_kif_all():
+    browser = webdriver.Chrome()
+    browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
+
+    sleep(10)  # 10秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
+
+    # 一番上の棋譜から順番に10局分
+    for i in range(1, 10):
+        elem = browser.find_element_by_css_selector("tr:nth-child(i) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small")
+        elem.click()
+        elem = browser.find_element_by_css_selector("div.is-paddingless.has-link")
+        elem.click()
+
+        # 詳細ページのURLを取得
+        cur_url = browser.current_url
+
+        # bs4でKIFデータをテキストでコピー
+        r = requests.get(cur_url)
+        soup = bs4.BeautifulSoup(r.text, "html.parser")
+        web_text = soup.select('pre.pre-wrap')
+        dl_text = ''.join(str(web_text))
+        pyperclip.copy(dl_text)
+
+        # paste_kif関数を使う
+
+        #ブラウザバックする
+        browser.back()
+        sleep(10)

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"/><link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet"/><link href="/shogi/assets/apple-touch-icon-search-f1d7ec950c5b673f6edee6513c2a0ed212b09e0868bb15962d580781c9d0325c.png" rel="apple-touch-icon"/><meta content="production" name="rails_env"/><script src="/shogi/packs/legacy_browser_verify-1f3645a8f6a00f124ded.js"></script><style type="text/css">[v-cloak]{display:none !important}</style><link href="/shogi/assets/favicon-9916ec89addce74466688a4143b8abe03757739337fe4b13872a78fac10c8c7f.ico" rel="shortcut icon" type="image/x-icon"/><meta content="authenticity_token" name="csrf-param"/>
+<meta content="f7Bh8cPZkBbCRU6eUTpnJuEgLjUV4fDcbfzWApnsmYs9+SSYjRveb/bYHqlyehdVq1edsla535PlIrwc6voL2A==" name="csrf-token"/><title>luc22 - 将棋ウォーズ棋譜検索 - 将棋のツール（仮）</title><script>var js_global = {"current_user":null,"talk_path":"/shogi/talk"}</script><link href="/shogi/assets/application-7399fd0a0a715bc0cc86003e1f11d416bf6bf567b49d5ceb068fbd0e1e123853.css" media="all" rel="stylesheet"/><script src="/shogi/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script><link href="/shogi/packs/application-653d6a1b12fcd6aeb466097a3d261ba0.css" media="all" rel="stylesheet"/><script src="/shogi/packs/application-ded91d77971df32cb520.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109851345-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109851345-1');
+</script>
+<script src="/shogi/packs/system_notification-8adcb66269c7ebe8b9ea.js"></script>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="@sgkinakomochi" name="twitter:site"/>
+    <meta content="@sgkinakomochi" name="twitter:creator"/>
+    <meta content="http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&amp;query=luc22" property="og:url"/>
+    <meta content="将棋ウォーズ棋譜検索 luc22" property="og:title"/>
+    <meta content="ぴよ将棋やKENTOと連携して開けます。またクリップボード経由で棋譜を外部の将棋アプリに渡すような使い方ができます" property="og:description"/>
+    <meta content="http://tk2-221-20341.vs.sakura.ne.jp/shogi/assets/swars_battles_index-c65a4ed43ebf2a433e53f7e6db386fa253b4735c9127fcceb5a27b96b9a84e77.png" property="og:image"/>
+    <script src="/shogi/packs/swars_battle_index-7f440788915d912a4db9.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+    new SwarsBattleIndex({"query":"luc22","search_scope_key":"ss_public","trick_show":false,"end_show":false,"xhr_index_path":"/shogi/w","total":148,"page":1,"per":50,"sort_column":"battled_at","sort_order":"desc"
+    ,"sort_order_default":"desc","records":[],"table_columns_hash":{"attack_tag_list":{"key":"attack_tag_list","label":"戦型","visible":true},"defense_tag_list":{"key":"defense_tag_list","label":"囲い","visible":false}
+    ,"final_info":{"key":"final_info","label":"結果","visible":false},"turn_max":{"key":"turn_max","label":"手数","visible":false},"rule_info":{"key":"rule_info","label":"種類","visible":false},"preset_info":{"key":"preset_info"
+    ,"label":"手合","visible":false},"battled_at":{"key":"battled_at","label":"日時","visible":true}},"modal_record":null,"table_column_storage_prefix_key":"swars/battles","zip_kifu_info":[{"key":"kif","code":0,"name":"KIF"}
+    ,{"key":"ki2","code":1,"name":"KI2"},{"key":"csa","code":2,"name":"CSA"},{"key":"sfen","code":3,"name":"SFEN"}],"current_swars_user_key":"luc22","required_query_for_search":true}).$mount("#swars_battle_index") })</script>
+</head>
+<body>
+<div id="single_notification_app"></div>
+<nav class="navbar is-primary is_screen_only">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/shogi/">将棋のツール（仮）</a>
+        <div class="navbar-burger burger" data-target="main_navar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="navbar-menu" id="main_navar">
+        <div class="navbar-start">
+            <a class="navbar-item is-active" href="/shogi/w">
+                <span class="icon"><i class="mdi mdi-magnify"></i></span>
+                  ウォーズ検索</a><a class="navbar-item" href="/shogi/adapter">
+            <span class="icon"><i class="mdi mdi-clipboard-arrow-up-outline"></i></span>
+              なんでも棋譜変換</a><a class="navbar-item" href="/shogi/cpu/battles">
+            <span class="icon"><i class="mdi mdi-robot"></i></span>  CPU対戦</a>
+            <a class="navbar-item" href="/shogi/xy">
+                <span class="icon"><i class="mdi mdi-apps"></i></span>  符号の鬼</a>
+            <a class="navbar-item" href="/shogi/stopwatch">
+                <span class="icon"><i class="mdi mdi-clock"></i></span>  詰将棋RTA</a>
+            <div class="navbar-item has-dropdown is-hoverable"><span class="navbar-link">もっと見る</span>
+                <div class="navbar-dropdown is-boxed"><a class="navbar-item" href="/shogi/x">
+                    <span class="icon"><i class="mdi mdi-clipboard-text-outline"></i></span>  野良棋譜</a>
+                    <a class="navbar-item" href="/shogi/board"> <span class="icon"><i class="mdi mdi-apps"></i></span>  ただの将棋盤</a>
+                </div></div></div><div class="navbar-end" id="header_app" v-cloak=""><template v-if="$route.path.includes('/colosseum/battles')">
+        <div class="navbar-item" v-if="joined_only_count &gt; 0"><b-tooltip label="ロビーに入っている人数" position="is-left"><b-icon icon="account">
+
+        </b-icon> {{joined_only_count}}</b-tooltip></div><div class="navbar-item" v-if="fighter_only_count &gt; 0"><b-tooltip label="対局中の人数" position="is-left">
+        <b-icon icon="play"></b-icon> {{fighter_only_count}}</b-tooltip></div></template></div></div></nav><section class="section"><div class="container is-fluid main_container">
+    <div id="swars_battle_index" v-cloak=""><div class="title yumincho is-2">将棋ウォーズ棋譜検索</div><hr/><div class="columns">
+        <div class="column"><form accept-charset="UTF-8" action="/shogi/w" method="get"><b-field>
+            <b-input expanded="" icon="magnify" list="search_field_query_completion" name="query" placeholder="ウォーズIDを入力してください" ref="query_field" type="search" v-model="query">
+
+            </b-input><datalist id="search_field_query_completion"><option value="luc22"></option></datalist><p class="control">
+            <button class="button is-info" type="submit">検索</button></p></b-field></form></div></div><template v-if="fetched_count &gt;= 1 &amp;&amp; records.length &gt;= 1">
+        <div class="columns"><div class="column"><button @click.stop.prevent="trick_show_handle" class="button is-small">仕掛け局面の表示   <b-icon :icon="!trick_show ? 'grid' : 'minus'" size="is-small">
+
+        </b-icon></button><template v-if="trick_show"><b-switch class="end_show" v-model="end_show">終了図</b-switch></template></div></div></template>
+        <div class="columns is-multiline" v-show="trick_show">
+            <template v-for="e in records">
+                <div class="column is-one-fifth-widescreen is-one-quarter-desktop is-one-third-tablet has-text-centered">
+                    <a @click.stop.prevent="show_handle(e)" class="no-decoration">
+                        <small class="line_break_on has-text-black-ter">{{e.memberships[1].location.hexagon_mark}} {{e.memberships[1].name_with_grade}}</small>
+                        <shogi_player :debug_mode="false" :flip="e.fliped" :hidden_if_piece_stand_blank="!end_show ? true : false" :kifu_body="e.sfen_body" :operation_disable="true" :overlay_navi="false" :run_mode="'view_mode'" :setting_button_show="false" :size="'x-small'" :sound_effect="false" :start_turn="start_turn_for(e)" :summary_show="false" :theme="'simple'" :vlayout="true"></shogi_player>
+                        <small class="line_break_on has-text-black-ter">{{e.memberships[0].location.hexagon_mark}} {{e.memberships[0].name_with_grade}}</small></a>
+                </div>
+            </template></div>
+        <b-modal :active.sync="modal_p" animation="zoom-in" has-modal-card="">
+            <template v-if="modal_record">
+                <div class="modal-card is-shogi-player-modal-card" style="width:auto">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title is-size-5 yumincho">
+                            <template v-if="modal_record.saturn_key === 'private'">
+                            <b-icon class="has-text-grey-light" icon="lock" size="is-small"></b-icon> 
+                        </template>{{modal_record.title}}</p>
+                        <button @click="modal_p = false" aria-label="close" class="delete"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <template v-if="modal_record.sfen_body">
+                            <shogi_player :controller_show="true" :debug_mode="false" :flip="modal_record.fliped" :key_event_capture="true" :kifu_body="modal_record.sfen_body" :player_info="modal_record.player_info" :run_mode.sync="sp_run_mode" :setting_button_show="false" :sfen_show="false" :size="'default'" :slider_show="true" :sound_effect="true" :start_turn="start_turn" :theme="'simple'" :volume="0.2" @update:start_turn="seek_to" ref="modal_shogi_player"></shogi_player>
+                            <template v-if="modal_record.description">
+                                <div class="modal_sp_description is-size-6 has-text-grey has-text-centered">{{modal_record.description}}</div>
+                            </template>
+                            <div class="iikanjino_yoko modal_sp_bottom_links">
+                                <b-switch false-value="view_mode" true-value="play_mode" v-model="sp_run_mode">継盤</b-switch>
+                            </div>
+                        </template>
+                        <template v-else="">
+                            <div class="modal_loading_content">
+                                <b-loading :active="!modal_record.sfen_body" :can-cancel="true" :is-full-page="false">
+
+                                </b-loading></div></template></section><footer class="modal-card-foot space_between">
+                    <a :href="modal_record.piyo_shogi_app_url" @click.stop="" class="button piyo_button is-small" type="button">
+                        <span class="icon"><img src="/shogi/assets/piyo_shogi_icon-22d7e453d4c413bf502bd3fddfddca75e4e1c33c96891cd91a48fd2ee541d15f.png"/></span>
+                        <span>ぴよ将棋</span></a>
+                    <b-button :href="`${modal_record.kento_app_url}#${real_pos}`" @click.stop="" class="kento_app_button" size="is-small" tag="a">☗ KENTO #{{real_pos}}</b-button>
+                    <template v-if="modal_record.kifu_copy_params">
+                        <a @click.stop.prevent="kifu_copy_handle(modal_record.kifu_copy_params)" class="button is-small">
+                        <b>棋譜コピー</b>
+                        </a>
+                    </template>
+                    <pulldown_menu :in_modal="true" :record="modal_record"></pulldown_menu>
+                    <template v-if="false">
+                        <a @click="modal_p = false" class="button is-small">閉じる</a>
+                    </template>
+                </footer>
+                </div>
+            </template>
+        </b-modal>
+        <div class="columns">
+            <div class="column">
+                <template v-if="records.length &gt;= 1">
+                    <b-field group-multiline="" grouped="">
+                        <div :key="index" class="control" v-for="(value, key, index) in table_columns_hash">
+                            <b-checkbox class="is-small" v-model="visible_hash[key]">{{value.label}}</b-checkbox>
+                        </div></b-field>
+                </template>
+                <b-table :current-page="page" :data="records" :default-sort="[sort_column, sort_order]" :default-sort-direction="$options.sort_order_default" :detailed="detailed" :loading="loading" :opened-detailed="defaultOpenedDetails" :per-page="per" :row-class="(row, index) =&gt; row.saturn_key" :show-detail-icon="showDetailIcon" :total="total" @details-open="details_open_handle" @page-change="page_change_handle" @sort="sort_handle" backend-pagination="" backend-sorting="" class="is_row_clickable" detail-key="id" hoverable="" paginated="" pagination-simple="" ref="table" v-if="table_display_p()">
+                    <template slot="empty">
+                        <template v-if="fetched_count &gt;= 1">
+                            <section class="section is-unselectable">
+                                <div class="content has-text-grey has-text-centered">
+                                    <p>
+                                        <b-icon icon="emoticon-sad" size="is-large"></b-icon>
+                                    </p>
+                                    <p>見つかりませんでした</p>
+                                </div>
+                            </section>
+                        </template>
+                    </template>
+                    <template slot-scope="props">
+                        <template v-if="table_columns_hash['id']">
+                            <b-table-column :label="table_columns_hash['id'].label" :visible="table_columns_hash['id'].visible" field="id" numeric="" sortable=""><a :href="props.row.show_path" @click.stop="">#{{props.row.id}}</a></b-table-column></template><template v-if="false"><b-table-column field="key" label="盤面"><a @click.stop.prevent="show_handle(props.row)"><b-icon icon="chess-board" pack="fas"></b-icon></a></b-table-column></template><template v-for="m in props.row.memberships"><b-table-column :label="m.label"><span><span v-html="m.icon_html"></span><template v-if="false"><a :href="m.query_user_url" @click.stop="">{{m.name_with_grade}}</a></template><template v-else=""><swars_user_link_to :membership="m"></swars_user_link_to></template><template v-for="key in ['attack_tag_list', 'defense_tag_list']"><template v-if="visible_hash[key]"><template v-for="tag in m[key]"><template v-if="tag.url"><a :href="tag.url" @click.stop="" class="has-text-grey is-size-7 tag_name">{{tag.name}}</a></template><template v-else=""><span class="has-text-grey is-size-7 tag_name">{{tag.name}}</span></template></template></template></template></span></b-table-column></template><b-table-column :label="table_columns_hash.final_info.label" :visible="visible_hash.final_info" field="final_key" sortable=""><template v-if="props.row.final_info.url"><a :class="props.row.final_info.class" :href="props.row.final_info.url" @click.stop="">{{props.row.final_info.name}}</a></template><template v-else=""><span :class="props.row.final_info.class">{{props.row.final_info.name}}</span></template></b-table-column><b-table-column :label="table_columns_hash.turn_max.label" :visible="visible_hash.turn_max" field="turn_max" numeric="" sortable="">{{props.row.turn_max}}</b-table-column><b-table-column :label="table_columns_hash.rule_info.label" :visible="visible_hash.rule_info" field="rule_key" sortable=""><template v-if="props.row.rule_info.url"><a :href="props.row.rule_info.url" @click.stop="">{{props.row.rule_info.name}}</a></template><template v-else="">{{props.row.rule_info.name}}</template></b-table-column><b-table-column :label="table_columns_hash.preset_info.label" :visible="visible_hash.preset_info" field="preset_key" sortable=""><template v-if="props.row.preset_info.url"><a :href="props.row.preset_info.url" @click.stop="">{{props.row.preset_info.name}}</a></template><template v-else="">{{props.row.preset_info.name}}</template></b-table-column><b-table-column :label="table_columns_hash.battled_at.label" :visible="visible_hash.battled_at" field="battled_at" sortable="">{{props.row.battled_at}}</b-table-column><b-table-column label=""><div class="row_operations is-inline-flex"><div class="buttons are-small"><b-button @click="show_handle(props.row)" class="sp_modal_button" icon-left="plus-square" icon-pack="fas"><b>盤面</b></b-button><a :href="props.row.piyo_shogi_app_url" class="button piyo_button" type="button"><span class="icon"><img src="/shogi/assets/piyo_shogi_icon-22d7e453d4c413bf502bd3fddfddca75e4e1c33c96891cd91a48fd2ee541d15f.png"/></span><span>ぴよ将棋</span></a><b-button :href="props.row.kento_app_url" @click.stop="" class="kento_app_button" tag="a">☗ KENTO</b-button><template v-if="props.row.kifu_copy_params"><a @click.stop.prevent="kifu_copy_handle(props.row.kifu_copy_params)" class="button is-small"><b>棋譜コピー</b></a></template><pulldown_menu :record="props.row" position="is-bottom-left"></pulldown_menu></div></div></b-table-column></template><template slot="detail" slot-scope="props"><div class="buttons are-small"><a :href="props.row.show_path" class="button">詳細</a><template v-for="e in props.row.memberships"><a :href="e.player_info_path" class="button">{{e.name_with_grade}} 情報</a></template><a :href="`${props.row.show_path}.kif?attachment=true`" class="button">KIF ダウンロード</a><a :href="`${props.row.show_path}.ki2?attachment=true`" class="button">KI2 ダウンロード</a><a :href="props.row.official_swars_battle_url" class="button" target="_self">ウォーズに飛ぶ</a><a @click.prevent="simple_clipboard_copy(props.row.swars_tweet_text)" class="button">Tweetコピー</a></div></template></b-table></div></div><template v-if="fetched_count &gt;= 1 &amp;&amp; records.length &gt;= 1"><div class="columns"><div class="column"><a href="/shogi/?per=10&amp;query=luc22"> 10 </a><span class="has-text-grey-lighter"> / </span><a href="/shogi/?per=25&amp;query=luc22"> 25 </a><span class="has-text-grey-lighter"> / </span><a href="/shogi/?per=50&amp;query=luc22"> 50 </a><span class="has-text-grey"><small>件ずつ表示</small></span></div></div></template><template v-if="fetched_count &gt;= 1 &amp;&amp; records.length &gt;= 1"><div class="buttons are-small"><b-button @click="usage_modal_open_handle" class="usage_modal_open_handle" icon-right="lightbulb-on-outline"></b-button><b-button @click="zip_dl_modal_open_handle" class="zip_dl_modal_open_handle" icon-right="download"></b-button></div></template><b-modal :active.sync="zip_dl_modal_p" animation="zoom-in" has-modal-card="" trap-focus=""><div class="modal-card" style="width:auto"><div class="modal-card-body box"><b-field><template v-for="e in ZipKifuInfo.values"><b-radio-button :native-value="e.key" size="is-small" v-model="zip_kifu_key">{{e.name}}</b-radio-button></template></b-field><b-field><b-button @click="zip_dl_run" class="zip_dl_run" icon-left="download" size="is-small"></b-button></b-field></div></div></b-modal><b-modal :active.sync="usage_modal_p" animation="zoom-in" trap-focus=""><b-message :closable="false" has-icon="" title="便利な使い方" type="is-info"><div class="content"><ol><li>検索後の最初の画面 (今の画面) をホーム画面に追加しておくとウォーズIDを毎回入力する手間が省けます</li><li>直前の対局を必ず検討する人向けのショートカットがあります。下のボタンをタップした直後に「ホーム画面に追加」しておくと、ホーム画面のアイコンから、直前の対局をすぐに開けるようになります<br/><div class="buttons"><a class="button is-small piyo_shogi" href="/shogi/w?external_app_key=piyo_shogi&amp;external_app_setup=true&amp;latest_open_index=0&amp;query=luc22">ぴよ将棋</a><a class="button is-small kento" href="/shogi/w?external_app_key=kento&amp;external_app_setup=true&amp;latest_open_index=0&amp;query=luc22">KENTO</a></div></li></ol></div></b-message></b-modal></div></div></section><footer class="footer is_screen_only is-hidden-mobile"><div class="container is-fluid"><div class="columns"><div class="column has-text-centered"><ul><li><a href="/shogi/about/privacy_policy">プライバシー</a></li><li><a href="/shogi/about/terms">利用規約</a></li><li><a href="/shogi/about/credit">クレジット</a></li><li><a href="https://twitter.com/sgkinakomochi" target="_self">問い合わせ</a></li></ul></div><div class="column has-text-centered"><ul><ul><b>GitHub</b></ul><ul><a href="https://github.com/akicho8/shogi_web" target="_self">shogi_web</a></ul><ul><a href="https://akicho8.github.io/shogi-player/" target="_self">shogi-player</a></ul><ul><a href="https://github.com/akicho8/bioshogi" target="_self">bioshogi</a></ul><ul><a href="https://github.com/akicho8/SKK-JISYO.shogi" target="_self">将棋用語辞書</a></ul><ul><a href="https://github.com/akicho8/shogi-mode" target="_self">shogi-mode.el</a></ul></ul></div></div><div class="column"><div class="column has-text-centered">Powered by <a href="https://www.ruby-lang.org/" target="_self">Ruby 2.6.1</a> and <a href="https://rubyonrails.org/" target="_self">Rails 5.2.3</a><div id="system_notification_app"></div></div></div></div></footer><script>var flash_light_notify = {}
+document.addEventListener('DOMContentLoaded', () => {
+  if (_) {
+    _.forIn(flash_light_notify, (message, key) => {
+      Vue.prototype.$buefy.toast.open({message: message, position: "is-bottom", type: `is-${key}`, duration: 1000 * 2, queue: false})
+    })
+  }
+})</script></body></html>
