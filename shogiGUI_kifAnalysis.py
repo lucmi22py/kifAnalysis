@@ -105,3 +105,8 @@ try:
         kfkfilemove.move_glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis','C:\\Users\\Ryota Okunishi\\PycharmProjects\\kifAnalysis\\*_ana.kfk')
 except IndexError:
     print("kfkファイルは存在しません")
+
+
+import subprocess
+
+subprocess.Popen('C:\\Program Files (x86)\\ShogiGUI\\ShogiGUI.exe')

@@ -1,10 +1,6 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import kif_handle
 
-# 乱数を生成
-x = np.random.rand(100)
-y = np.random.rand(100)
+if __name__ == '__main__':
+    kif_handle.dl_kif_top()
 
-# 散布図を描画
-plt.scatter(x, y)
-plt.show()
+#print('連続処理は終了しました。')

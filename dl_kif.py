@@ -14,7 +14,7 @@ browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
 sleep(10) # 10秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
 # 一番上の棋譜の詳細ページへ飛ぶ
-elem = browser.find_element_by_css_selector("tr:nth-child(1) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small") # cssselector = 'tr:nth-child(i) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small' 時々チェックすること!
+elem = browser.find_element_by_css_selector("tr:nth-child(1) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small") # cssselector = 'tr:nth-child(i) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small' 時々チェックすること! 2020/02/10まで
 elem.click()
 elem = browser.find_element_by_css_selector("div.is-paddingless.has-link")
 elem.click()
