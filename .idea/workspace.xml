@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="first commit on pycharm" />
-    <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="">
-      <change afterPath="$PROJECT_DIR$/dl_kif_loop.py" afterDir="false" />
+    <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="first commit on pycharm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_kif.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl_kif_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_loop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_recog.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_recog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kif_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shogikifAna.py" beforeDir="false" afterPath="$PROJECT_DIR$/shogikifAna.py" afterDir="false" />
     </list>
+    <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kfkfiling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="51">
               <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -27,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dl_kif.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
+            <state relative-caret-position="658">
               <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
               <folding>
                 <element signature="e#24#100#0" expanded="true" />
@@ -42,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dl_kif_loop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="33" column="115" lean-forward="true" selection-start-line="33" selection-start-column="115" selection-end-line="33" selection-end-column="115" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#24#100#0" expanded="true" />
               </folding>
@@ -54,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file_recog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -90,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kif_handle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-766">
-              <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+            <state relative-caret-position="255">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
               </folding>
@@ -105,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shogikifAna.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="986">
+              <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -117,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shogiGUI_kifAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
+            <state relative-caret-position="355">
+              <caret line="83" selection-start-line="71" selection-end-line="83" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -164,20 +166,20 @@
         <option value="$PROJECT_DIR$/mouseNow.py" />
         <option value="$PROJECT_DIR$/websc_practice.py" />
         <option value="$PROJECT_DIR$/shogiGUI_kifAnalysis.py" />
-        <option value="$PROJECT_DIR$/file_recog.py" />
         <option value="$PROJECT_DIR$/kfkgraph.py" />
+        <option value="$PROJECT_DIR$/dl_kif.py" />
+        <option value="$PROJECT_DIR$/file_recog.py" />
+        <option value="$PROJECT_DIR$/dl_kif_loop.py" />
         <option value="$PROJECT_DIR$/kif_handle.py" />
         <option value="$PROJECT_DIR$/shogikifAna.py" />
-        <option value="$PROJECT_DIR$/dl_kif.py" />
-        <option value="$PROJECT_DIR$/dl_kif_loop.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="715" />
+    <option name="y" value="172" />
+    <option name="width" value="1145" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -227,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dl_kif_loop">
+  <component name="RunManager" selected="Python.shogikifAna">
     <configuration name="dl_kif" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kifAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dl_kif_loop" />
-        <item itemvalue="Python.dl_kif" />
         <item itemvalue="Python.shogikifAna" />
-        <item itemvalue="Python.kfkgraph" />
+        <item itemvalue="Python.dl_kif_loop" />
         <item itemvalue="Python.file_recog" />
+        <item itemvalue="Python.dl_kif" />
+        <item itemvalue="Python.kfkgraph" />
       </list>
     </recent_temporary>
   </component>
@@ -369,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581671769684</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish">
+      <created>1581672260484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581672260484</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -382,24 +391,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.10642782" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16057234" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.3206934" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.23076923" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.22968581" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.22912966" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.22912966" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -430,10 +439,25 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit on pycharm" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit on pycharm" />
+    <MESSAGE value="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -582,13 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anakif.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/anakif.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/soupsieve/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -635,6 +653,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kfkfiling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kfkgraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/websc_practice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -642,22 +677,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shogiGUI_kifAnalysis.py">
+    <entry file="file://$PROJECT_DIR$/dl_kif.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
+        <state relative-caret-position="658">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kfkfiling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#24#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,17 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kfkgraph.py">
+    <entry file="file://$PROJECT_DIR$/shogiGUI_kifAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shogikifAna.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="355">
+          <caret line="83" selection-start-line="71" selection-end-line="83" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -691,37 +709,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file_recog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kif_handle.py">
+    <entry file="file://$PROJECT_DIR$/shogikifAna.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-766">
-          <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+        <state relative-caret-position="986">
+          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
           <folding>
-            <element signature="e#0#76#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dl_kif_loop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="33" column="115" lean-forward="true" selection-start-line="33" selection-start-column="115" selection-end-line="33" selection-end-column="115" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#24#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dl_kif.py">
+    <entry file="file://$PROJECT_DIR$/kif_handle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
-            <element signature="e#24#100#0" expanded="true" />
+            <element signature="e#0#76#0" expanded="true" />
           </folding>
         </state>
       </provider>

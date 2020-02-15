@@ -7,7 +7,8 @@ import requests
 import pyperclip
 from time import sleep
 
-loop_num = 3 # 取り込む棋譜の数
+print('取り込む棋譜の数を入力してください')
+loop_num = int(input()) # 取り込む棋譜の数
 for num in range(1,loop_num + 1):
     # google chromeで将棋ウォーズ棋譜検索を開く
     browser = webdriver.Chrome()

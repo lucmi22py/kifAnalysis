@@ -10,9 +10,10 @@ from time import sleep
 
 # 棋譜を開く
 def openkif():
-    moveTo(45, 50)
+    moveTo(1224, 26)
+    click(1224, 26)
     sleep(1)
-    click(45, 50)
+    moveTo(45, 50)
     click(45, 50)
     moveTo(45, 107)
     click(45, 107)
