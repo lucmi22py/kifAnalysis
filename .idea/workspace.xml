@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="first commit on pycharm">
+    <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_kif_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_loop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_recog.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_recog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kif_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_handle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shogikifAna.py" beforeDir="false" afterPath="$PROJECT_DIR$/shogikifAna.py" afterDir="false" />
     </list>
     <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
@@ -92,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kif_handle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="72">
               <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
@@ -104,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shogikifAna.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+            <state relative-caret-position="644">
+              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -176,10 +173,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="715" />
-    <option name="y" value="172" />
-    <option name="width" value="1145" />
-    <option name="height" value="791" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -378,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581672260484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dl_kif_loop.py: input number of analysis loop&#10;file_recog.py: simple test&#10;kif_handle.py: fix openkif&#10;shogikifAna.py: analysis loop dev. finish">
+      <created>1581775694148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581775694148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -391,11 +395,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16057234" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.10642782" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -404,7 +407,7 @@
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.3206934" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.22912966" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.22912966" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.13976164" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32936078" />
@@ -457,7 +460,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit on pycharm" />
     <MESSAGE value="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
+    <MESSAGE value="dl_kif_loop.py: input number of analysis loop&#10;file_recog.py: simple test&#10;kif_handle.py: fix openkif&#10;shogikifAna.py: analysis loop dev. finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="dl_kif_loop.py: input number of analysis loop&#10;file_recog.py: simple test&#10;kif_handle.py: fix openkif&#10;shogikifAna.py: analysis loop dev. finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,16 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shogikifAna.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dl_kif_loop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -736,10 +730,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kif_handle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="72">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shogikifAna.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>

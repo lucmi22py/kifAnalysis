@@ -56,4 +56,4 @@ for num in range(1,loop_num + 1):
     except IndexError:
         print("kfkファイルは存在しません")
 
-    print('棋譜解析完了しました。:' + num + '局目')
+    print('棋譜解析完了しました。:' + str(int(num)) + '局目')
