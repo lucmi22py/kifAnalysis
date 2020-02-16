@@ -3,7 +3,7 @@ import shutil
 import glob
 
 f = glob.glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\rawkifu\\*_ana.kif')
-#f1 = f[0]
+# f1 = f[0]
 
 
 def change_suffix(file_name, from_suffix, to_suffix):

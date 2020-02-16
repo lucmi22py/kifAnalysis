@@ -8,6 +8,7 @@ import requests
 import pyperclip
 from time import sleep
 
+
 # 棋譜を開く
 def openkif():
     moveTo(1224, 26)
@@ -26,6 +27,7 @@ def openkif():
     click(728, 749)
     sleep(2)
 
+
 # 棋譜解析を行う
 def anakif():
     moveTo(1224, 26)
@@ -39,6 +41,7 @@ def anakif():
     moveTo(755, 897)
     click(755, 897)
 
+
 # 棋譜解析終了判定
 def finana():
     while True:
@@ -51,6 +54,7 @@ def finana():
                 break
         except ImageNotFoundException:
             sleep(10)
+
 
 # 解析済みファイル保存(.kif)
 def savekif():
@@ -70,6 +74,7 @@ def savekif():
     moveTo(735, 748, duration=0.01)
     click(735, 748)
     sleep(5)
+
 
 # 将棋ウォーズ棋譜検索から一番上の棋譜をダウンロード
 def dl_kif_top():
@@ -130,35 +135,3 @@ def dl_kif_top():
     # ブラウザを閉じる
     browser.quit()
     print('ブラウザは閉じられました')
-
-# seleniumuでkif一括ダウンロード
-def dl_kif_all():
-    # 一番上の棋譜から順番に10局分
-    for i in range(1, 3):
-        browser = webdriver.Chrome()
-        browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
-        sleep(10)  # 10秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
-
-        elem = browser.find_element_by_css_selector("tr:nth-child(i) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small")
-        elem.click()
-        elem = browser.find_element_by_css_selector("div.is-paddingless.has-link > a")
-        elem.click()
-
-        # kifコピー
-        hotkey('ctrl', 'a')
-        sleep(2)
-        hotkey('ctrl', 'c')
-
-        # クリップボードのテキストを将棋所へ張り付け
-        moveTo(970, 1044)  # shogiGUIを開く
-        sleep(2)
-        click(970, 1044)
-        sleep(2)
-        moveTo(1224, 26)  # shogiGUIのウィンドウを触る
-        click(1224, 26)
-        sleep(1)
-        hotkey('ctrl', 'v')
-
-        #ブラウザバックする
-        browser.back()
-        sleep(2)

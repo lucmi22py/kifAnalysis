@@ -1,15 +1,11 @@
 # -*- coding: utf-8 -*-
-from pyautogui import locateCenterOnScreen, typewrite, hotkey, click, moveTo
 from selenium import webdriver
 import chromedriver_binary
-import bs4
-import requests
-import pyperclip
 from time import sleep
 
 print('取り込む棋譜の数を入力してください')
-loop_num = int(input()) # 取り込む棋譜の数
-for num in range(1,loop_num + 1):
+loop_num = int(input())  # 取り込む棋譜の数
+for num in range(1, loop_num + 1):
     # google chromeで将棋ウォーズ棋譜検索を開く
     browser = webdriver.Chrome()
     browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
