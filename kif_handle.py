@@ -1,5 +1,7 @@
 from pyautogui import locateCenterOnScreen, typewrite, hotkey, click, moveTo
 from pyscreeze import ImageNotFoundException
+import glob
+import kfkfilemove
 import subprocess
 from selenium import webdriver
 import chromedriver_binary
@@ -135,3 +137,32 @@ def dl_kif_top():
     # ブラウザを閉じる
     browser.quit()
     print('ブラウザは閉じられました')
+
+
+# 棋譜(kif)を先手と後手に分ける
+def kif_classify():
+    kif_list = glob.glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\rawkifu2\\*.kif')
+    loop_num = int(input())
+
+    for num in range(loop_num):
+        file = kif_list[num]
+
+        with open(file) as f:
+            lines = f.readlines()
+            f.close()
+            for i in range(8):
+                line_i = lines[i]
+                if "先手：luc22" in line_i:
+                    if __name__ == '__main__':
+                        kfkfilemove.move_glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\mykif_sente',
+                                              file)
+                    print('mykif_senteへ移動しました')
+                    continue
+                elif "後手：luc22" in line_i:
+                    if __name__ == '__main__':
+                        kfkfilemove.move_glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\mykif_gote',
+                                              file)
+                    print('mykif_goteへ移動しました')
+                    continue
+        print(str(int(num + 1)) + '局目:' + file)
+    print('すべての処理が終了しました')
