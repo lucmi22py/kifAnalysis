@@ -14,11 +14,11 @@ for num in range(1, loop_num + 1):
 
     # 一番上の棋譜の詳細ページへ飛ぶ
     elem_xpath = browser.find_element_by_xpath(
-        '//tr[' + str(int(num)) + ']/td/div/div/div[1]/button[@class="button arrow_icon is-small"]')
+        '//tr[' + str(int(num)) + ']/td/div/div/div/button')
     elem_xpath.click()
     sleep(2)
     elem2_xpath = browser.find_element_by_xpath(
-        '//tr[' + str(int(num)) + ']/td/div/div/div[3]/div/div[3]')
+        '//tr[' + str(int(num)) + ']/td/div/div/div[3]/div/div[5]')
     elem2_xpath.click()
     elem3 = browser.find_element_by_xpath('//pre').text
 
@@ -26,10 +26,8 @@ for num in range(1, loop_num + 1):
     xpathを使う場合
     //tr[1]/td/div/div/div[1]/button[@class="button arrow_icon is-small"] -->正しいxpath
     
-    //*[@id="swars_battle_index"]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[4]/div/div/div[3]/div/div[1]
-    //*[@id="swars_battle_index"]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[4]/div/div/div[3]/div/div[2]
-    //*[@id="swars_battle_index"]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[4]/div/div/div[3]/div/div[3]
-    [@class="is-paddingless has-link"]
+    //*[@id="swars_battle_index"]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[4]/div/div/div[1]/button
+    //*[@id="swars_battle_index"]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[4]/div/div/div[3]/div/div[5]
 
     css セレクタを使う場合
     elem = browser.find_element_by_css_selector("tr:nth-child(1) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small") # cssselector = 'tr:nth-child(i) > td > div > div > div.dropdown-trigger > button.button.arrow_icon.is-small' 時々チェックすること! 2020/02/10まで
