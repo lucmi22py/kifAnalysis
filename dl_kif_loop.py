@@ -18,7 +18,7 @@ for num in range(1, loop_num + 1):
     elem_xpath.click()
     sleep(2)
     elem2_xpath = browser.find_element_by_xpath(
-        '//tr[' + str(int(num)) + ']/td/div/div/div[3]/div/div[6]')
+        '//tr[' + str(int(num)) + ']/td[4]/div/div/div[3]/div/a[6]')
     elem2_xpath.click()
     elem3 = browser.find_element_by_xpath('//pre').text
 
