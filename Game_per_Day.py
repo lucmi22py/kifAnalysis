@@ -13,13 +13,9 @@ sleep(5)  # 10秒待ち(chromeが開いてからでないと以降のコード�
 # 今日の日付の棋譜の数を数える
 for num in range(1, loop_num + 1):
     elem_xpath = browser.find_element_by_xpath('//tbody/tr[' + str(int(num)) + ']/td[3]').text
-    t = str("21:21")
     m = re.fullmatch('\d{2}:\d{2}', elem_xpath)
 
-    #elem_xpath = re.compile(r'\d{2}:\d{2}')
-    #result = elem_xpath.search()
     if re.fullmatch('\d{2}:\d{2}', elem_xpath) is None:
-        #if elem_xpath == re.search(r'|\d{2}\:\d{2}|'):
         print('マッチしていないから昨日以前')
         Max_loop_num = num
         break
