@@ -9,6 +9,8 @@ import bs4
 import requests
 import pyperclip
 from time import sleep
+import shutil
+
 
 
 # 棋譜を開く
@@ -166,3 +168,34 @@ def kif_classify():
                     continue
         print(str(int(num + 1)) + '局目:' + file)
     print('すべての処理が終了しました')
+
+
+# ファイルを移動する
+def move_glob(dst_path, pathname, recursive=True):    # dst_path = 保存先のpath, pathname = 保存元のpath
+    for p in glob.glob(pathname, recursive=recursive):
+        shutil.move(p, dst_path)
+
+
+# 対象ファイル抽出
+def file_rec():
+    '''
+    print('どんなデータを抽出しますか？\n'
+          '1:対象年月を抽出\n'
+          '2:対象を抽出\n'
+          '3:hogehoge\n')
+    '''
+    ent = 1
+    if ent == 1:
+        path = str(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu2')
+        print("対象とする年月(yyyymm)をいれてください。ex)202003")
+    file_name = str(r'\*') + str(input()) + str(r'*_*')
+    now_path = path + file_name
+    print(now_path)
+    obj_list = glob.glob(now_path)
+    if obj_list:
+        '''
+        print(obj_list)
+        '''
+    else:
+        print('対象のファイルは存在しません')
+    return obj_list

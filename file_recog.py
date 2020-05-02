@@ -1,22 +1,24 @@
+import numpy as np
+import matplotlib
+#matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+#%matplotlib inline
 import re
 
 # 行数を数える
-with open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk', 'r') as file:
+with open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk',
+          'r') as file:
     for line_count, _ in enumerate(file, 1):
         pass
-print(int(line_count))
+print("全行数: " + str(int(line_count)))
 file.close()
 
 
-'''
-file2 = open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk', 'r')
-lines = file2.readlines()
-file2.close()
-'''
-
-with open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk', 'r') as file:
+with open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk',
+          'r') as file:
     lines = file.readlines()
     file.close()
+print("全行数: " + str(int(line_count)))
 honpu_point = []
 ana_point = []
 
@@ -45,4 +47,35 @@ print(len(honpu_point))
 
 print(ana_point)
 print(len(ana_point))
-print('処理を終了しました')
+
+num_te = list(range(1, len(honpu_point) + 1))
+print(num_te)
+
+print("現前局面評価値-前局面評価値")
+diff_list = [honpu_point[0]]
+result = honpu_point[1]-honpu_point[0]
+diff_list.append(result)
+for i in range(1, len(honpu_point)):
+    try:
+        result = honpu_point[i+1]-honpu_point[i]
+        diff_list.append(result)
+    except IndexError:
+        break
+
+print(diff_list)
+print('計数処理を終了しました')
+
+# カラーリスト
+color_list = ['#B0E0E6', '#FA8072', '#B0C4DE', '#00CED1']
+
+# グラフ描画処理
+plt.subplot(2, 1, 1)
+plt.plot(num_te, honpu_point, color=color_list[3])
+plt.grid(which='major')
+
+plt.subplot(2, 1, 2)
+plt.plot(num_te, diff_list, color=color_list[1])
+plt.grid(which='major')
+
+plt.show()
+plt.savefig("test_ana.png")
