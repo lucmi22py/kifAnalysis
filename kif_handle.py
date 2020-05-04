@@ -184,18 +184,22 @@ def file_rec():
           '2:対象を抽出\n'
           '3:hogehoge\n')
     '''
-    ent = 1
-    if ent == 1:
+    #ent = 1
+    #if ent == 1:
+    print('pathを指定してください\n'
+          '1:rawkifu2移動用path\n'
+          '2:指定パスを入力\n')
+    num_path = int(input())
+    if num_path == 1:
         path = str(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu2')
         print("対象とする年月(yyyymm)をいれてください。ex)202003")
-    file_name = str(r'\*') + str(input()) + str(r'*_*')
-    now_path = path + file_name
-    print(now_path)
-    obj_list = glob.glob(now_path)
-    if obj_list:
-        '''
-        print(obj_list)
-        '''
+        file_name = str(r'\*') + str(input()) + str(r'*_*')
+    elif num_path == 2:
+        print('pathを入力してください\n')
+        path = str(input())
+        file_name = str(r'\*.kif')
     else:
-        print('対象のファイルは存在しません')
+        print('番号が違います。処理なし')
+    now_path = path + file_name
+    obj_list = glob.glob(now_path)
     return obj_list
