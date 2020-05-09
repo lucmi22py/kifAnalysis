@@ -115,6 +115,8 @@ def winlose_ana():
     print('後手番勝敗: ' + str(won_gote) + '勝' + str(lose_gote) + '敗' + ' (' + str(won_gote/(won_gote + lose_gote)) + ')')
     print('後手切れ負け: ' + str(time_over_lose_gote) + '回 (' + str(float(time_over_lose_gote/lose_gote)) + ')')
 
+# 時間分析
+
 
 # 悪手率分析
 

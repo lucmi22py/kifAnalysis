@@ -6,22 +6,28 @@ from selenium.common.exceptions import NoSuchElementException
 import pyperclip
 import re
 import os
+import Game_per_Day
 
-print('取り込む棋譜の数を入力してください')
-loop_num = int(input())  # 取り込む棋譜の数
+# 棋譜数カウント
+gpd = Game_per_Day.game_per_day()
+if gpd is None:
+    print('取り込む棋譜の数を入力してください')
+    loop_num = int(input())  # 取り込む棋譜の数
+else:
+    loop_num = gpd
+
+# google chromeで将棋ウォーズ棋譜検索を開く
+browser = webdriver.Chrome()
+browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
+sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
+
 for num in range(1, loop_num + 1):
-    # google chromeで将棋ウォーズ棋譜検索を開く
-    browser = webdriver.Chrome()
-    browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
-    sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
-
     # コピーから取得する方法
     elem_copy = browser.find_element_by_xpath(
         '//tr[' + str(int(num)) + ']/td[4]/div/button[1]'
     )
     elem_copy.click()
-    sleep(1.5)
-    browser.quit()
+    sleep(2.5)
 
     # ファイル名整形
     pre_paste = pyperclip.paste()
@@ -51,5 +57,5 @@ for num in range(1, loop_num + 1):
     〈issues〉
     例外処理…xpath変更差分が取れるようにする。
     '''
-
 print("すべての処理は終了しました")
+browser.quit()
