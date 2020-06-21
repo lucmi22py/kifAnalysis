@@ -12,7 +12,6 @@ from time import sleep
 import shutil
 
 
-
 # 棋譜を開く
 def openkif():
     moveTo(1224, 26)

@@ -19,6 +19,9 @@ def game_per_day():
         if re.fullmatch('\d{2}:\d{2}', elem_xpath) is None:
             max_loop_num = num
             break
+        elif num == 50:
+            max_loop_num = num + 1
+            break
 
     print('結果：//tr[' + str(int(max_loop_num)) + ']/td/div/div/div[3]/div/div[6]')
     print(str(int(max_loop_num)-1) + '局まで取得推奨')
@@ -30,6 +33,7 @@ def game_per_day():
     elem2_xpath.click()
     elem3 = browser.find_element_by_xpath('//pre').text
     //*[@id="swars_battle_index"]/div[5]/div/div[2]/div[2]/table/tbody/tr[8]/td[4]/div/div/div[1]/button
+    /html/body/section/div/div/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[4]/div/button[1]
     '''
 
     '''

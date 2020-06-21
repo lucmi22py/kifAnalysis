@@ -6,41 +6,46 @@ import matplotlib.pyplot as plt
 import re
 
 # 行数を数える
-with open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk',
-          'r') as file:
+file_dir = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\analysis'
+file_name = r'luc22-itukyuusan-20200502_233415_ana.kfk'
+with open(file_dir + str('\\') + file_name, 'r') as file:
     for line_count, _ in enumerate(file, 1):
         pass
 print("全行数: " + str(int(line_count)))
 file.close()
 
 
-with open('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis\\piyo_20200108_175545_ana.kfk',
-          'r') as file:
+with open(file_dir + str('\\') + file_name, 'r') as file:
     lines = file.readlines()
     file.close()
 print("全行数: " + str(int(line_count)))
 honpu_point = []
 ana_point = []
 
-for i in range(0, line_count):
-    i_line = lines[i]
-    if '解析' in i_line:
-        m_honpu = re.search(r'評価値\s(-|)\d{1,5}', i_line)
-        mp_honpu_list = m_honpu.group().split()
-        mp_honpu = mp_honpu_list[1]
-        t = int(str(mp_honpu))
-        honpu_point.append(t)
-        #print(honpu_point)
-        continue
-    elif '候補手' in i_line:
-        m_ana = re.search(r'評価値\s(-|)\d{1,5}', i_line)
-        mp_ana_list = m_ana.group().split()
-        mp_ana = mp_ana_list[1]
-        t2 = int(str(mp_ana))
-        ana_point.append(t2)
-        #t2 = int(str())
-        #ana_point.append(t2)
-        continue
+try:
+    for i in range(0, line_count):
+        i_line = lines[i]
+        if '解析' in i_line:
+            m_honpu = re.search(r'評価値\s(-|)\d{1,5}', i_line)
+            mp_honpu_list = m_honpu.group().split()
+            mp_honpu = mp_honpu_list[1]
+            t = int(str(mp_honpu))
+            honpu_point.append(t)
+            #print(honpu_point)
+            continue
+        elif '候補手' in i_line:
+            m_ana = re.search(r'評価値\s(-|)\d{1,5}', i_line)
+            mp_ana_list = m_ana.group().split()
+            mp_ana = mp_ana_list[1]
+            t2 = int(str(mp_ana))
+            ana_point.append(t2)
+            #t2 = int(str())
+            #ana_point.append(t2)
+            continue
+except AttributeError:
+    pass
+    # 処理なし
+
 del honpu_point[0]
 print(honpu_point)
 print(len(honpu_point))

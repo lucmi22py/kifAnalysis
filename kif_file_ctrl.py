@@ -1,7 +1,12 @@
 import os
+import kif_handle
 copy = './kifAnalysis/dl.kif'
 dest = './kifAnalysis/dl.kif'
 os.rename(copy, dest)
+
+
+# kifファイルの移動
+kif_handle.kif_classify()
 
 # 改行の削除
 # gllib化すべき？
