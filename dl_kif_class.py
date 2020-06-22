@@ -20,7 +20,7 @@ class DLKifClass:
 
     def __init__(self, user_name):
         self.name = user_name
-        self.dl_url = r'https://www.shogi-extend.com/?per=50&query=' + self.name
+        self.dl_url = r'https://www.shogi-extend.com/w?per=50&query=' + self.name
 
     def dl_kif(self):
         # 棋譜数カウント
@@ -35,7 +35,7 @@ class DLKifClass:
 
         # google chromeで将棋ウォーズ棋譜検索を開く
         browser = webdriver.Chrome()
-        browser.get(r'https://www.shogi-extend.com/?per=50&query=anreichan')
+        browser.get(r'https://www.shogi-extend.com/w?per=50&query=anreichan')
         sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
         loop_num = int(50)
@@ -69,9 +69,8 @@ class DLKifClass:
         print("すべての処理は終了しました")
         browser.quit()
 
-    def kifana(self):
+    def kifana(self, src_path, dest_path, loop_num):
         print('回数を入力してください')
-        loop_num = int(input())
         for num in range(1, loop_num + 1):
             if __name__ == '__main__':
                 kif_handle.openkif()
@@ -127,5 +126,6 @@ class DLKifClass:
 
 dl = DLKifClass('luc22')
 print(dl.dl_url)
-cur_url = DLKifClass.url + dl.name
-print(cur_url)
+dl.kifana(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_kif\anreichan(yodan)',
+          r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_anakif\anreichan(yodan)_ana',
+          50)

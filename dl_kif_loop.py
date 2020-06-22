@@ -18,7 +18,7 @@ else:
 
 # google chromeで将棋ウォーズ棋譜検索を開く
 browser = webdriver.Chrome()
-browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
+browser.get('https://www.shogi-extend.com/w?per=50&query=luc22')
 sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
 for num in range(1, loop_num + 1):

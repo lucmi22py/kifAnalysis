@@ -1,6 +1,7 @@
 from pyautogui import locateCenterOnScreen, typewrite, hotkey, click, moveTo
 from pyscreeze import ImageNotFoundException
 import glob
+import re
 import kfkfilemove
 import subprocess
 from selenium import webdriver
@@ -10,6 +11,78 @@ import requests
 import pyperclip
 from time import sleep
 import shutil
+
+
+class KifHandle:
+    def __init__(self, name):
+        self.name = name
+
+    @staticmethod
+    def open_kif():
+        moveTo(1224, 26)
+        click(1224, 26)
+        sleep(1)
+        moveTo(45, 50)
+        click(45, 50)
+        moveTo(45, 107)
+        click(45, 107)
+        sleep(1)
+        moveTo(483, 241)
+        sleep(1)
+        click(483, 241)
+        moveTo(728, 749)
+        sleep(1)
+        click(728, 749)
+        sleep(2)
+
+    @staticmethod
+    def ana_kif():
+        moveTo(1224, 26)
+        click(1224, 26)
+        sleep(3)
+        moveTo(317, 47)
+        click(317, 47)
+        moveTo(317, 234)
+        click(317, 234)
+        sleep(1)
+        moveTo(755, 897)
+        click(755, 897)
+
+    @staticmethod
+    # 棋譜解析終了判定
+    def fin_ana():
+        while True:
+            try:
+                d = locateCenterOnScreen('OK.png', grayscale=True)
+                if d is not None:
+                    x, y = locateCenterOnScreen('OK.png', grayscale=True)
+                    moveTo(x, y)
+                    click(x, y)
+                    break
+            except ImageNotFoundException:
+                sleep(10)
+
+    # 解析済みファイル保存(.kif)
+    def save_kif(self, string):
+        sp = list(string)
+        print(sp)
+        print('入力待ち：' + input(str()))
+        moveTo(1224, 26)
+        click(1224, 26)
+        moveTo(45, 50, duration=0.01)
+        click(45, 50)
+        sleep(1)
+        moveTo(62, 184, duration=0.01)
+        click(62, 184)
+        sleep(1)
+        moveTo(810, 642, duration=0.01)
+        click(810, 644)
+        sleep(1)
+        hotkey('fn', 'end')
+        typewrite(['backspace', 'backspace', 'backspace', 'backspace', '_', 'a', 'n', 'a'], 0.04)
+        moveTo(735, 748, duration=0.01)
+        click(735, 748)
+        sleep(5)
 
 
 # 棋譜を開く
@@ -83,7 +156,7 @@ def savekif():
 def dl_kif_top():
     # google chromeで将棋ウォーズ棋譜検索を開く
     browser = webdriver.Chrome()
-    browser.get('http://tk2-221-20341.vs.sakura.ne.jp/shogi/?per=50&query=luc22')
+    browser.get('https://www.shogi-extend.com/w?per=50&query=luc22')
 
     sleep(10)  # 10秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
