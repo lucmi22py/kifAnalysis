@@ -70,7 +70,7 @@ class DLKifClass:
         browser.quit()
 
     def kifana(self, src_path, dest_path, loop_num):
-        print('回数を入力してください')
+        # 対象ファイルコピー
         for num in range(1, loop_num + 1):
             if __name__ == '__main__':
                 kif_handle.openkif()
@@ -86,8 +86,11 @@ class DLKifClass:
 
             # 同名kifファイル移動
             path = 'C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\rawkifu'
-            A1 = glob.glob(os.path.join(path, '*_ana.*'))  # 対象1
-            A1_list_str = A1[0]
+            analyzed_kif = glob.glob(os.path.join(path, '*_ana.*'))  # 対象1
+            try:
+                A1_list_str = analyzed_kif[0]
+            except IndexError:
+                print('*_anaファイルは存在しません。bklogにエラーを保存しました。')
             B = pathlib.Path(A1_list_str)
             Target1_deana = B.stem.rstrip("_ana")
             A2 = glob.glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\rawkifu\\*.kif')  # 対象2
@@ -127,5 +130,5 @@ class DLKifClass:
 dl = DLKifClass('luc22')
 print(dl.dl_url)
 dl.kifana(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_kif\anreichan(yodan)',
-          r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_anakif\anreichan(yodan)_ana',
+              r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_anakif\anreichan(yodan)_ana',
           50)
