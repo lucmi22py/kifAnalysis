@@ -8,6 +8,7 @@ import re
 import os
 import glob
 import pathlib
+import shutil
 
 import kif_handle
 import kfkfilemove
@@ -69,7 +70,7 @@ class DLKifClass:
         print("すべての処理は終了しました")
         browser.quit()
 
-    def kifana(self, src_path, dest_path, loop_num):
+    def kifana(self, src_path, dst_path, loop_num):
         # 対象ファイルコピー
         for num in range(1, loop_num + 1):
             if __name__ == '__main__':
@@ -96,9 +97,7 @@ class DLKifClass:
             A2 = glob.glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\rawkifu\\*.kif')  # 対象2
             for A2_element in A2:
                 if Target1_deana in A2_element:
-                    if __name__ == '__main__':
-                        kfkfilemove.move_glob(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu2',
-                                              A2_element)
+                    shutil.move(A2_element, r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu2')
                     break
 
             # kfkfilingによるkfk化は最後にすること
@@ -118,9 +117,8 @@ class DLKifClass:
 
             # kfkファイル移動
             try:
-                if __name__ == '__main__':
-                    kfkfilemove.move_glob('C:\\Users\\Ryota Okunishi\\OneDrive\\棋譜\\shogiwarskifu\\analysis',
-                                          'C:\\Users\\Ryota Okunishi\\pycharm_projects\\kifAnalysis\\*_ana.kfk')
+                shutil.move(r'C:\Users\Ryota Okunishi\pycharm_projects\kifAnalysis\*_ana.kfk',
+                            r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\analysis')
             except IndexError:
                 print("kfkファイルは存在しません")
 
@@ -130,5 +128,5 @@ class DLKifClass:
 dl = DLKifClass('luc22')
 print(dl.dl_url)
 dl.kifana(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_kif\anreichan(yodan)',
-              r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_anakif\anreichan(yodan)_ana',
+          r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\python_anakif\anreichan(yodan)_ana',
           50)
