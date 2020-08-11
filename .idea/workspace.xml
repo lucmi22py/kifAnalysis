@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kifAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kifAnalysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_kif_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kadai.py" beforeDir="false" afterPath="$PROJECT_DIR$/kadai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kif_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kfkfiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/kfkfiling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kifanamng.py" beforeDir="false" afterPath="$PROJECT_DIR$/kifanamng.py" afterDir="false" />
     </list>
     <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
@@ -24,34 +21,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>icon</find>
-      <find>notebook_dir</find>
-      <find>kifmove</find>
-      <find>timeover</find>
-      <find>init_value</find>
-      <find>dstdirectory</find>
-      <find>max_loop_num</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>kif_move</replace>
-      <replace>time_over</replace>
-      <replace>value</replace>
-      <replace>self.dst_path</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\Ryota Okunishi\PycharmProjects\kifAnalysis\venv</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2113" />
-    <option name="y" value="22" />
-    <option name="width" value="575" />
-    <option name="height" value="309" />
   </component>
   <component name="ProjectId" id="1ftUxruW8cKHy1IVu5jm1gDTRTf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -369,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595765420422</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="class整理">
+      <created>1597098960331</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1597098960332</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -425,45 +403,54 @@
     <MESSAGE value="中変更:dl_kif_class修正(def kifana()追加)" />
     <MESSAGE value="中変更:dl_kif_class, dl_kif_loop, Game_per_Day, kif_handle, kifanamng修正" />
     <MESSAGE value="データ可視化テスト" />
-    <option name="LAST_COMMIT_MESSAGE" value="データ可視化テスト" />
+    <MESSAGE value="class整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="class整理" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2511" y="88" key="CommitChangelistDialog2" timestamp="1597098958022">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2511" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597098958022" />
     <state width="985" height="466" key="DebuggerActiveHint" timestamp="1597043431510">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="985" height="466" key="DebuggerActiveHint/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597043431510" />
-    <state width="1899" height="227" key="GridCell.Tab.0.bottom" timestamp="1597048058707">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1597120012297">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058707" />
-    <state width="1899" height="227" key="GridCell.Tab.0.center" timestamp="1597048058706">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012297" />
+    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1597120012297">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058706" />
-    <state width="1899" height="227" key="GridCell.Tab.0.left" timestamp="1597048058705">
+    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012297" />
+    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1597120012297">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058705" />
-    <state width="1899" height="227" key="GridCell.Tab.0.right" timestamp="1597048058707">
+    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012297" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1597120012297">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058707" />
-    <state width="1899" height="227" key="GridCell.Tab.1.bottom" timestamp="1597048058540">
+    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012297" />
+    <state width="1877" height="227" key="GridCell.Tab.1.bottom" timestamp="1597120012130">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058540" />
-    <state width="1899" height="227" key="GridCell.Tab.1.center" timestamp="1597048058540">
+    <state width="1877" height="227" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012130" />
+    <state width="1877" height="227" key="GridCell.Tab.1.center" timestamp="1597120012130">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058540" />
-    <state width="1899" height="227" key="GridCell.Tab.1.left" timestamp="1597048058540">
+    <state width="1877" height="227" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012130" />
+    <state width="1877" height="227" key="GridCell.Tab.1.left" timestamp="1597120012130">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058540" />
-    <state width="1899" height="227" key="GridCell.Tab.1.right" timestamp="1597048058540">
+    <state width="1877" height="227" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012130" />
+    <state width="1877" height="227" key="GridCell.Tab.1.right" timestamp="1597120012130">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="227" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597048058540" />
+    <state width="1877" height="227" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597120012130" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597098971490">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597098971490" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
