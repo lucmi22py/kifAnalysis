@@ -24,6 +24,7 @@ gote_path = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\vskif\対' +
 
 # '''
 # kifのDL
+# dl.dl_kif()
 # kif解析
 dl.kifana(src_path, dst_path, loop_num)
 # '''

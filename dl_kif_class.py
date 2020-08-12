@@ -9,6 +9,7 @@ import glob
 import pathlib
 import shutil
 
+# from kif_handle import KifHandle as KH
 import kif_handle
 import kfkfiling
 
@@ -62,30 +63,33 @@ class DLKifClass:
     def kifana(src_path, dst_path, loop_num):
         # 対象ファイルコピー
         for num in range(1, loop_num + 1):
+            '''
+            KH.open_kif()
+            KH.ana_kif()
+            KH.fin_ana()
+            KH.save_kif()
+            '''
+            # '''
             kif_handle.openkif()
             kif_handle.anakif()
             kif_handle.finana()
             kif_handle.savekif()
+            # '''
 
             # 同名kifファイル移動
             # 比較元ファイル(複数)
             t_src_path = os.path.join(src_path, '*.kif')
             compare_file = glob.glob(t_src_path)
             # 比較対象ファイル(1つ)
-            try:
-                tana_src_path = os.path.join(src_path, '*_ana.*')
-                analyzed_kif = glob.glob(tana_src_path)[0]
-                pathlib_analyzed_kif = pathlib.Path(analyzed_kif)
-                analyzed_kif_prename = pathlib_analyzed_kif.stem.rstrip('_ana')
-
-            # 同名チェック
-                for file_num in range(len(compare_file)):
-                    pathlib_compare_file = pathlib.Path(compare_file[file_num])
-                    if analyzed_kif_prename == pathlib_compare_file.stem:
-                        shutil.move(compare_file[file_num], dst_path)
-                        break
-            except IndexError:
-                print('*_ana.kifファイルは存在しません')
+            tana_src_path = os.path.join(src_path, '*_ana.*')
+            analyzed_kif = glob.glob(tana_src_path)[0]
+            pathlib_analyzed_kif = pathlib.Path(analyzed_kif)
+            analyzed_kif_prename = pathlib_analyzed_kif.stem.rstrip('_ana')
+            for file_num in range(len(compare_file)):
+                pathlib_compare_file = pathlib.Path(compare_file[file_num])
+                if analyzed_kif_prename == pathlib_compare_file.stem:
+                    shutil.move(compare_file[file_num], dst_path)
+                    break
 
             # kfkfilingによるkfk化は最後にすること
             # pyファイルのあるディレクトリへ対象ファイルを移動させるため
