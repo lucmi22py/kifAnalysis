@@ -17,7 +17,7 @@ else:
     loop_num = gpd
 
 # google chromeで将棋ウォーズ棋譜検索を開く
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(executable_path=r'C:\Users\Ryota Okunishi\pycharm_projects\kifAnalysis\venv\Lib\site-packages\chromedriver_binary\chromedriver.exe')
 browser.get('https://www.shogi-extend.com/w?per=50&query=luc22')
 sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 

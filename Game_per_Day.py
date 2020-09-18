@@ -7,7 +7,7 @@ from time import sleep
 def game_per_day():
     # 自分の棋譜検索ページを開く
     loop_num = 50  # 取り込む棋譜の数
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome(executable_path=r'C:\Users\Ryota Okunishi\pycharm_projects\kifAnalysis\venv\Lib\site-packages\chromedriver_binary\chromedriver.exe')
     browser.get('https://www.shogi-extend.com/w?per=50&query=luc22') # google chromeで将棋ウォーズ棋譜検索を開く
     sleep(5)  # 10秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
