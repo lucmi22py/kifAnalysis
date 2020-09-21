@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sample_kif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game_per_Day.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_per_Day.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_kif_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_kif_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_loop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kif_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kifanamng.py" beforeDir="false" afterPath="$PROJECT_DIR$/kifanamng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/chromedriver_binary/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/chromedriver_binary/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/chromedriver-path.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/chromedriver-path.exe" afterDir="false" />
     </list>
     <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/kfkfilemove.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.kifanamng">
+  <component name="RunManager" selected="Python.sample_kif">
     <configuration name="dl_kif_loop" type="PythonConfigurationType" factoryName="Python">
       <module name="kifAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sample_kif" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="kifAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample_kif.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sample_kif" />
         <item itemvalue="Python.kifanamng" />
         <item itemvalue="Python.shogikifAna" />
         <item itemvalue="Python.sample_dash" />
         <item itemvalue="Python.pd_csv" />
-        <item itemvalue="Python.scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597223587474</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="chromedriver ver85対応&#10;ver85のpath接続">
+      <created>1600440329075</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1600440329076</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,67 +420,72 @@
     <MESSAGE value="class整理" />
     <MESSAGE value="同名kifファイル移動修正" />
     <MESSAGE value="class修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="class修正" />
+    <MESSAGE value="chromedriver ver85対応&#10;ver85のpath接続" />
+    <option name="LAST_COMMIT_MESSAGE" value="chromedriver ver85対応&#10;ver85のpath接続" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="394" y="0" key="CommitChangelistDialog2" timestamp="1597223585426">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2511" y="88" key="CommitChangelistDialog2" timestamp="1600440326184">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="394" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223585426" />
-    <state x="2511" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597123063963" />
+    <state x="2511" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600440326184" />
     <state width="985" height="466" key="DebuggerActiveHint" timestamp="1597043431510">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="985" height="466" key="DebuggerActiveHint/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597043431510" />
-    <state width="1899" height="290" key="GridCell.Tab.0.bottom" timestamp="1599923402570">
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom" timestamp="1600691086908">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402570" />
-    <state width="1899" height="290" key="GridCell.Tab.0.center" timestamp="1599923402570">
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086908" />
+    <state width="1899" height="290" key="GridCell.Tab.0.center" timestamp="1600691086908">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402570" />
-    <state width="1899" height="290" key="GridCell.Tab.0.left" timestamp="1599923402570">
+    <state width="1899" height="290" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086908" />
+    <state width="1899" height="290" key="GridCell.Tab.0.left" timestamp="1600691086908">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402570" />
-    <state width="1899" height="290" key="GridCell.Tab.0.right" timestamp="1599923402570">
+    <state width="1899" height="290" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086908" />
+    <state width="1899" height="290" key="GridCell.Tab.0.right" timestamp="1600691086908">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402570" />
-    <state width="1899" height="290" key="GridCell.Tab.1.bottom" timestamp="1599923402392">
+    <state width="1899" height="290" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086908" />
+    <state width="1899" height="290" key="GridCell.Tab.1.bottom" timestamp="1600691086703">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402392" />
-    <state width="1899" height="290" key="GridCell.Tab.1.center" timestamp="1599923402391">
+    <state width="1899" height="290" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086703" />
+    <state width="1899" height="290" key="GridCell.Tab.1.center" timestamp="1600691086703">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402391" />
-    <state width="1899" height="290" key="GridCell.Tab.1.left" timestamp="1599923402391">
+    <state width="1899" height="290" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086703" />
+    <state width="1899" height="290" key="GridCell.Tab.1.left" timestamp="1600691086703">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402391" />
-    <state width="1899" height="290" key="GridCell.Tab.1.right" timestamp="1599923402391">
+    <state width="1899" height="290" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086703" />
+    <state width="1899" height="290" key="GridCell.Tab.1.right" timestamp="1600691086703">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599923402391" />
-    <state x="2388" y="165" key="SettingsEditor" timestamp="1600436166228">
+    <state width="1899" height="290" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600691086703" />
+    <state x="2397" y="257" width="983" height="708" key="SettingsEditor" timestamp="1600689966313">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2388" y="165" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600436166228" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1597223594351">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2397" y="257" width="983" height="708" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600689966313" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600440354362">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223594351" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597123089288" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600440354362" />
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600440338421">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600440338421" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,6 +514,11 @@
           <url>file://$PROJECT_DIR$/file_recog.py</url>
           <line>45</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dl_kif_class.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
