@@ -21,11 +21,10 @@ class DLKifClass:
         self.name = user_name
         self.dl_url = r'https://www.shogi-extend.com/w?per=50&query=' + self.name
 
-    @staticmethod
-    def dl_kif():
+    def dl_kif(self, save_path):
         # google chromeで将棋ウォーズ棋譜検索を開く
-        browser = webdriver.Chrome()
-        browser.get(r'https://www.shogi-extend.com/w?per=50&query=anreichan')
+        browser = webdriver.Chrome(executable_path=r'C:\Users\Ryota Okunishi\pycharm_projects\kifAnalysis\venv\Lib\site-packages\chromedriver_binary\chromedriver.exe')
+        browser.get(self.dl_url)
         sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
         loop_num = int(50)
@@ -51,7 +50,7 @@ class DLKifClass:
             title_kif = str(sp1 + '-' + sp2 + '-' + sp3 + '.kif')
 
             # ファイル保存
-            new_kif_file = os.path.abspath(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\studykif\\')
+            new_kif_file = os.path.abspath(save_path)
             file_kif = open(new_kif_file + title_kif, 'w')
             file_kif.write(pre_paste)
             file_kif.close()
@@ -62,6 +61,9 @@ class DLKifClass:
     @staticmethod
     def kifana(src_path, dst_path, loop_num):
         # 対象ファイルコピー
+        if loop_num is None:
+            print('ループ回数を入力してください\n')
+            loop_num = int(input())
         for num in range(1, loop_num + 1):
             '''
             KH.open_kif()
@@ -108,5 +110,9 @@ class DLKifClass:
                 shutil.move(kfk_file[0], ana_dst_path)
             except IndexError:
                 print("kfkファイルは存在しません")
+            except shutil.Error:
+                kfk_file_name = pathlib.Path(kfk_file[0]).name
+                resave_path = ana_dst_path + r'\\' + kfk_file_name
+                shutil.move(kfk_file[0], resave_path)
 
             print('棋譜解析完了しました。:' + str(int(num)) + '局目')

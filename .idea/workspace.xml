@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dl_kif_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kif_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kifanamng.py" beforeDir="false" afterPath="$PROJECT_DIR$/kifanamng.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample_kif.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_kif.py" afterDir="false" />
     </list>
     <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
@@ -397,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601085799309</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="軽微な変更">
+      <created>1601810722746</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601810722746</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,18 +457,19 @@
     <MESSAGE value="サンドボックススクリプトsample_kifの登録" />
     <MESSAGE value="chromeバージョンチェック" />
     <MESSAGE value="chromeバージョンチェック本番lib登録" />
-    <option name="LAST_COMMIT_MESSAGE" value="chromeバージョンチェック本番lib登録" />
+    <MESSAGE value="軽微な変更" />
+    <option name="LAST_COMMIT_MESSAGE" value="軽微な変更" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2635" y="223" key="#xdebugger.evaluate" timestamp="1601172997998">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2635" y="223" key="#xdebugger.evaluate/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601172997998" />
-    <state x="2511" y="88" key="CommitChangelistDialog2" timestamp="1601085797623">
+    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2" timestamp="1601810720570">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="394" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223585426" />
-    <state x="2511" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601085797623" />
+    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601810720570" />
     <state width="985" height="466" key="DebuggerActiveHint" timestamp="1601087937288">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -511,11 +518,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2397" y="257" width="983" height="708" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600689966313" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601085805025">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601810729967">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223594351" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601085805025" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601810729967" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601086071965">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
