@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="chromeバージョンチェック本番lib">
+      <change afterPath="$PROJECT_DIR$/dl_webdriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_kif_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kif_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample_kif.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_kif.py" afterDir="false" />
     </list>
@@ -403,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601810722746</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="chromeバージョン指定">
+      <created>1602946356688</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1602946356688</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +440,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit on pycharm" />
     <MESSAGE value="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
     <MESSAGE value="dl_kif_loop.py: input number of analysis loop&#10;file_recog.py: simple test&#10;kif_handle.py: fix openkif&#10;shogikifAna.py: analysis loop dev. finish" />
     <MESSAGE value="error fix" />
@@ -458,18 +464,19 @@
     <MESSAGE value="chromeバージョンチェック" />
     <MESSAGE value="chromeバージョンチェック本番lib登録" />
     <MESSAGE value="軽微な変更" />
-    <option name="LAST_COMMIT_MESSAGE" value="軽微な変更" />
+    <MESSAGE value="chromeバージョン指定" />
+    <option name="LAST_COMMIT_MESSAGE" value="chromeバージョン指定" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2635" y="223" key="#xdebugger.evaluate" timestamp="1601172997998">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2635" y="223" key="#xdebugger.evaluate/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601172997998" />
-    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2" timestamp="1601810720570">
+    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2" timestamp="1602946355189">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="394" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223585426" />
-    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601810720570" />
+    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602946355189" />
     <state width="985" height="466" key="DebuggerActiveHint" timestamp="1601087937288">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -518,11 +525,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2397" y="257" width="983" height="708" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600689966313" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601810729967">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602946363222">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223594351" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601810729967" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602946363222" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601086071965">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
