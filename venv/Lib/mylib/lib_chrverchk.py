@@ -8,7 +8,7 @@ import datetime
 
 # -*- 処理部 -*-
 chrome_ver = str(chrome_version())
-chromedriver_ver = str('85.0.4183')
+chromedriver_ver = str('86.0.4240')
 if chromedriver_ver == chrome_ver:
     ok = str('バージョンチェック問題なし')
     state = ok
