@@ -32,13 +32,17 @@ for num in range(1, loop_num + 1):
     # ファイル名整形
     pre_paste = pyperclip.paste()
     sp = pre_paste.split('\r\n')
-    pre_sp1 = sp[0].split(' ')
+    sente_pick = [s for s in sp if "先手：" in s]
+    gote_pick = [s for s in sp if "後手：" in s]
+    start_date_pick = [s for s in sp if "開始日時：" in s]
+
+    pre_sp1 = sente_pick[0].split(' ')
     prep_sp1 = pre_sp1[0]
     sp1 = re.sub(r'先手：', '', prep_sp1)
-    pre_sp2 = sp[1].split(' ')
+    pre_sp2 = gote_pick[0].split(' ')
     prep_sp2 = pre_sp2[0]
     sp2 = re.sub(r'後手：', '', prep_sp2)
-    pre_sp3 = re.sub(r'開始日時：|/|:', '', sp[2])
+    pre_sp3 = re.sub(r'開始日時：|/|:', '', start_date_pick[0])
     sp3 = re.sub(r' ', '_',pre_sp3)
     title_kif = str(sp1 + '-' + sp2 + '-' + sp3 + '.kif')
 
