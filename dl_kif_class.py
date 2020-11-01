@@ -8,6 +8,7 @@ import os
 import glob
 import pathlib
 import shutil
+import datetime
 
 # from kif_handle import KifHandle as KH
 import kif_handle
@@ -20,14 +21,14 @@ class DLKifClass:
     def __init__(self, user_name):
         self.name = user_name
         self.dl_url = r'https://www.shogi-extend.com/w?per=50&query=' + self.name
+        self.g_gpd = int()
 
-    def dl_kif(self, save_path):
+    def dl_kif(self, save_path = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu', loop_num = 50):
         # google chromeで将棋ウォーズ棋譜検索を開く
         browser = webdriver.Chrome(executable_path=r'C:\Users\Ryota Okunishi\pycharm_projects\kifAnalysis\venv\Lib\site-packages\chromedriver_binary\chromedriver.exe')
         browser.get(self.dl_url)
         sleep(5)  # 5秒待ち(chromeが開いてからでないと以降のコードが受け付られない)
 
-        loop_num = int(50)
         for num in range(1, loop_num + 1):
             # コピーから取得する方法
             elem_copy = browser.find_element_by_xpath(
@@ -39,19 +40,23 @@ class DLKifClass:
             # ファイル名整形
             pre_paste = pyperclip.paste()
             sp = pre_paste.split('\r\n')
-            pre_sp1 = sp[0].split(' ')
+            sente_pick = [s for s in sp if "先手：" in s]
+            gote_pick = [s for s in sp if "後手：" in s]
+            start_date_pick = [s for s in sp if "開始日時：" in s]
+
+            pre_sp1 = sente_pick[0].split(' ')
             prep_sp1 = pre_sp1[0]
             sp1 = re.sub(r'先手：', '', prep_sp1)
-            pre_sp2 = sp[1].split(' ')
+            pre_sp2 = gote_pick[0].split(' ')
             prep_sp2 = pre_sp2[0]
             sp2 = re.sub(r'後手：', '', prep_sp2)
-            pre_sp3 = re.sub(r'開始日時：|/|:', '', sp[2])
+            pre_sp3 = re.sub(r'開始日時：|/|:', '', start_date_pick[0])
             sp3 = re.sub(r' ', '_', pre_sp3)
             title_kif = str(sp1 + '-' + sp2 + '-' + sp3 + '.kif')
 
             # ファイル保存
             new_kif_file = os.path.abspath(save_path)
-            file_kif = open(new_kif_file + title_kif, 'w')
+            file_kif = open(new_kif_file + r'\\' + title_kif, 'w')
             file_kif.write(pre_paste)
             file_kif.close()
             print("ファイル作成完了。title: " + title_kif)
@@ -59,7 +64,7 @@ class DLKifClass:
         browser.quit()
 
     @staticmethod
-    def kifana(src_path, dst_path, loop_num):
+    def kifana(src_path, dst_path, loop_num, ana_dst_path = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\analysis'):
         # 対象ファイルコピー
         if loop_num is None:
             print('ループ回数を入力してください\n')
@@ -96,7 +101,6 @@ class DLKifClass:
             # kfkfilingによるkfk化は最後にすること
             # pyファイルのあるディレクトリへ対象ファイルを移動させるため
             # *_ana.kifファイルのkfk化
-            ana_dst_path = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\analysis'
             try:
                 kfkfiling.change_suffix(analyzed_kif, ana_dst_path, '.kif', '.kfk')
             except IndexError:
@@ -116,3 +120,11 @@ class DLKifClass:
                 shutil.move(kfk_file[0], resave_path)
 
             print('棋譜解析完了しました。:' + str(int(num)) + '局目')
+
+    def daily_kifana_log(self):
+        dt_now = datetime.datetime.now()
+        path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\daily_kifana_log.txt'
+        with open(path_w, mode='w') as f:
+            f.write('///daily_kifana実行ログ///' + '\n' +
+                    'check date: \t' + str(dt_now) + '\n' +
+                    '取得棋譜数: \t' + str(self.g_gpd) + '\n')
