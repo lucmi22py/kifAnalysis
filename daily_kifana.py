@@ -10,7 +10,7 @@ import Game_per_Day
 dl = dlkf.DLKifClass('luc22')
 dl2 = dlkf.KifHandle2('luc22')
 
-# 棋譜ダウンロード
+# 棋譜ダウンロード.
 #gpd = Game_per_Day.game_per_day()
 #dl.dl_kif(loop_num=gpd)
 #dl.daily_kifana_log()

@@ -237,7 +237,7 @@ class KifHandle2:
                 shutil.move(compare_file[file_num], dst_path)
                 break
 
-        # kfkfilingによるkfk化は最後にすること
+        # kfkfilingによるkfk化は最後にすること.
         # pyファイルのあるディレクトリへ対象ファイルを移動させるため
         # *_ana.kifファイルのkfk化
         try:

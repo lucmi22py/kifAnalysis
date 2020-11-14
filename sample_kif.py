@@ -147,7 +147,7 @@ class KifHandle2:
             shutil.move(kfk_file[0], resave_path)
 
 
-dataset = KifHandle('luc22')
+dataset = KifHandle2('luc22')
 dataset.open_kif(r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu1101')
 dataset.anakif()
 dataset.finana()
