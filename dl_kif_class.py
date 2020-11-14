@@ -135,7 +135,7 @@ class DLKifClass:
                     '取得棋譜数: \t' + str(self.g_gpd) + '\n')
 
 
-class KifHandle2:
+class KifHandle:
     def __init__(self, name):
         self.name = name
 
@@ -237,7 +237,7 @@ class KifHandle2:
                 shutil.move(compare_file[file_num], dst_path)
                 break
 
-        # kfkfilingによるkfk化は最後にすること.
+        # kfkfilingによるkfk化は最後にすること
         # pyファイルのあるディレクトリへ対象ファイルを移動させるため
         # *_ana.kifファイルのkfk化
         try:
@@ -259,12 +259,15 @@ class KifHandle2:
             shutil.move(kfk_file[0], resave_path)
 
     @staticmethod
-    def kifana2(src_path: str,
-                loop_num: int):
+    def kifana(src_path: str,
+               loop_num: int):
+        if loop_num is None:
+            print('ループ回数を入力してください\n')
+            loop_num = int(input())
         for num in range(1, loop_num + 1):
-            KifHandle2.open_kif(src_path)
-            KifHandle2.anakif()
-            KifHandle2.finana()
-            KifHandle2.savekif()
-            KifHandle2.arrangement(src_path)
+            KifHandle.open_kif(src_path)
+            KifHandle.anakif()
+            KifHandle.finana()
+            KifHandle.savekif()
+            KifHandle.arrangement(src_path)
             print('棋譜解析完了しました。:' + str(int(num)) + '局目')
