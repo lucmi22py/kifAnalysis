@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="chromeバージョンチェック本番lib">
-      <change afterPath="$PROJECT_DIR$/daily_kifana.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl_kif_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/dl_kif_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kif_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/kif_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kifanamng.py" beforeDir="false" afterPath="$PROJECT_DIR$/kifanamng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_kif.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_kif.py" afterDir="false" />
-    </list>
+    <list default="true" id="793741d0-2f43-419f-90cc-39fa4917995c" name="Default Changelist" comment="chromeバージョンチェック本番lib" />
     <list id="1a9446e8-ad2b-4eab-a4f1-a94ccf618873" name="first commit on pycharm" comment="dl_kif(just 1) dev. finish&#10;dl_kif_loop(more than once) dev. finish" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,8 +182,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.daily_kifana" />
-        <item itemvalue="Python.lib_chrverchk" />
         <item itemvalue="Python.sample_kif" />
+        <item itemvalue="Python.lib_chrverchk" />
         <item itemvalue="Python.kifanamng" />
         <item itemvalue="Python.shogikifAna" />
       </list>
@@ -433,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603892165218</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="daily_kifana.py登録">
+      <created>1604239464949</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1604239464950</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +463,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PEP 8 fix" />
     <MESSAGE value="kif_handle: kif先後分類func&#10;file_recog: 評価値抽出&#10;websc_practice: kif_ana先後分類" />
     <MESSAGE value="elem2_xpathの変更" />
     <MESSAGE value="新規作成：gpd.py (game per day 今日何局指したかカウントする)&#10;小さな変更: dl_kif_loop.py" />
@@ -488,75 +487,84 @@
     <MESSAGE value="dl_webdriver登録" />
     <MESSAGE value="__init__.py登録 他" />
     <MESSAGE value="copy_text変更による微修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="copy_text変更による微修正" />
+    <MESSAGE value="daily_kifana.py登録" />
+    <option name="LAST_COMMIT_MESSAGE" value="daily_kifana.py登録" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#Intentions" timestamp="1604236814347">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="178" key="#Intentions/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604236814347" />
+    <state x="2619" y="344" key="#Notifications" timestamp="1605327176646">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2619" y="344" key="#Notifications/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605327176646" />
     <state x="2635" y="223" key="#xdebugger.evaluate" timestamp="1601172997998">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2635" y="223" key="#xdebugger.evaluate/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601172997998" />
-    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2" timestamp="1603892163801">
+    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2" timestamp="1604239462176">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="394" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223585426" />
-    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603892163801" />
+    <state x="2511" y="19" width="738" height="932" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604239462176" />
     <state width="985" height="466" key="DebuggerActiveHint" timestamp="1601087937288">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="985" height="466" key="DebuggerActiveHint/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601087937288" />
-    <state width="1899" height="290" key="GridCell.Tab.0.bottom" timestamp="1604238086751">
+    <state x="2226" y="329" key="FileChooserDialogImpl" timestamp="1604801275180">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2226" y="329" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604801275180" />
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1605326369036">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238086751" />
-    <state width="1899" height="290" key="GridCell.Tab.0.center" timestamp="1604238086751">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326369036" />
+    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1605326369036">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238086751" />
-    <state width="1899" height="290" key="GridCell.Tab.0.left" timestamp="1604238086751">
+    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326369036" />
+    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1605326369036">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238086751" />
-    <state width="1899" height="290" key="GridCell.Tab.0.right" timestamp="1604238086751">
+    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326369036" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1605326369036">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238086751" />
-    <state width="1899" height="290" key="GridCell.Tab.1.bottom" timestamp="1604238080067">
+    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326369036" />
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1605326368860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238080067" />
-    <state width="1899" height="290" key="GridCell.Tab.1.center" timestamp="1604238080067">
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326368860" />
+    <state width="1877" height="290" key="GridCell.Tab.1.center" timestamp="1605326368860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238080067" />
-    <state width="1899" height="290" key="GridCell.Tab.1.left" timestamp="1604238080067">
+    <state width="1877" height="290" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326368860" />
+    <state width="1877" height="290" key="GridCell.Tab.1.left" timestamp="1605326368860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238080067" />
-    <state width="1899" height="290" key="GridCell.Tab.1.right" timestamp="1604238080067">
+    <state width="1877" height="290" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326368860" />
+    <state width="1877" height="290" key="GridCell.Tab.1.right" timestamp="1605326368860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="129" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597193180909" />
-    <state width="1899" height="290" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604238080067" />
-    <state x="2397" y="257" width="983" height="708" key="SettingsEditor" timestamp="1600689966313">
+    <state width="1877" height="290" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605326368860" />
+    <state x="2397" y="257" width="983" height="708" key="SettingsEditor" timestamp="1605318519308">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2397" y="257" width="983" height="708" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600689966313" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603892171462">
+    <state x="2397" y="257" width="983" height="708" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605318519308" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605325084171">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1597223594351" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603892171462" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605325084171" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601086071965">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -589,11 +597,6 @@
           <url>file://$PROJECT_DIR$/file_recog.py</url>
           <line>45</line>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sample_kif.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

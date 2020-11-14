@@ -49,7 +49,7 @@ class KifDataBase:
                         except SyntaxError:
                             print("Syntax Error !")
 
-    def sep_sengo(self, sente_src_path, gote_src_path, dst_path):
+    def separate_sengo(self, sente_src_path, gote_src_path, dst_path):
         sengo_list = glob.glob(dst_path + r'\*.kif')
         list_count = len(sengo_list)
         sente = '先手：' + self.name
