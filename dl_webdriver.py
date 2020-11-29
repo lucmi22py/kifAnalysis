@@ -49,7 +49,7 @@ def dl_webdriver():
             print('最新のchromedriverを適用しますか？ [y/n]' )
             yn = input()
             if yn == r'y':
-                #listの中で最新のものをsite-packagesに適用する
+                # listの中で最新のものをsite-packagesに適用する
                 for i in range(len(chromedriver_list)):
                     p_list = pathlib.Path(chromedriver_list[i])
                     p_list_stat = p_list.stat()
@@ -60,3 +60,6 @@ def dl_webdriver():
         print('テスト終わり')
         print(dst_path)
         print('テスト終わり')
+
+
+dl_webdriver()
