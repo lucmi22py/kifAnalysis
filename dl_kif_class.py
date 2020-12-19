@@ -11,7 +11,7 @@ import datetime
 from pyautogui import locateCenterOnScreen, typewrite, hotkey, click, moveTo, press
 from pyscreeze import ImageNotFoundException
 import pyperclip
-
+import chardet
 # from kif_handle import KifHandle as KH
 import kif_handle
 import kfkfiling
@@ -126,9 +126,9 @@ class DLKifClass:
 
             print('棋譜解析完了しました。:' + str(int(num)) + '局目')
 
-    def daily_kifana_log(self):
+    def daily_kifana_dllog(self):
         dt_now = datetime.datetime.now()
-        path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\daily_kifana_log.txt'
+        path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\daily_kifana_dllog.txt'
         with open(path_w, mode='w') as f:
             f.write('///daily_kifana実行ログ///' + '\n' +
                     'check date: \t' + str(dt_now) + '\n' +
@@ -138,6 +138,25 @@ class DLKifClass:
 class KifHandle:
     def __init__(self, name):
         self.name = name
+        self.mojicheck_result: str = ""
+
+    def daily_kifana_result_log(self):
+        dt_now = datetime.datetime.now()
+        path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\daily_kifana_result_log.txt'
+        old_path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\old_log'
+        if os.path.exists(path_w) is True:
+            p = pathlib.Path(path_w)
+            st = p.stat()
+            if st.st_ctime + 64800000 < dt_now.timestamp():
+                shutil.move(path_w, old_path_w)
+            else:
+                with open(path_w, mode='a') as f:
+                    f.write(self.mojicheck_result + '\n')
+        else:
+            with open(path_w, mode='w') as f:
+                f.write('///daily_kifana_resultログ///' + '\n' +
+                        'check date: \t' + str(dt_now) + '\n' +
+                        self.mojicheck_result + '\n')
 
     @staticmethod
     def open_kif(target_path):
@@ -271,3 +290,41 @@ class KifHandle:
             KifHandle.savekif()
             KifHandle.arrangement(src_path)
             print('棋譜解析完了しました。:' + str(int(num)) + '局目')
+
+    def mojicheck(self, dst_path: str = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\rawkifu1101'):
+        kif_list = glob.glob(dst_path + r'\*.kif')
+        utf8_list = []
+        for num, item in enumerate(kif_list):
+            with open(kif_list[num], mode='rb') as f:
+                search_text = f.read()
+            s = chardet.detect(search_text)
+            bool_sjis = 'utf-8' in s.values()
+            # shift_jisのkifが読み込めるので、utf-8の棋譜のみ抽出
+            if bool_sjis is True:
+                utf8_list.append(item)
+        for i in utf8_list:
+            print(i)
+        print('対象棋譜：' + str(len(utf8_list)) + '局（' + dst_path + '）')
+        self.mojicheck_result = '文字コードエラー移動対象棋譜：' + str(len(utf8_list)) + '局（' + dst_path + '）'
+
+        # utf-8のkifをstudykifフォルダへ仮退避
+        for j in range(len(utf8_list)):
+            shutil.move(utf8_list[j], r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\studykif')
+
+        # log作成・更新
+        dt_now = datetime.datetime.now()
+        path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\daily_kifana_result_log.txt'
+        old_path_w = r'C:\Users\Ryota Okunishi\OneDrive\棋譜\shogiwarskifu\old_log'
+        if os.path.exists(path_w) is True:
+            p = pathlib.Path(path_w)
+            st = p.stat()
+            if st.st_ctime + 64800000 < dt_now.timestamp():
+                shutil.move(path_w, old_path_w)
+            else:
+                with open(path_w, mode='a') as f:
+                    f.write(self.mojicheck_result + '\n')
+        else:
+            with open(path_w, mode='w') as f:
+                f.write('///daily_kifana_resultログ///' + '\n' +
+                        'check date: \t' + str(dt_now) + '\n' +
+                        self.mojicheck_result + '\n')

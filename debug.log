@@ -16,3 +16,4 @@
 [1108/104012.870:ERROR:exception_snapshot_win.cc(99)] thread ID 9440 not found in process
 [1108/104012.887:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
 [1108/104012.887:ERROR:exception_snapshot_win.cc(99)] thread ID 388 not found in process
+[1213/021128.196:ERROR:directory_reader_win.cc(43)] FindFirstFile: 指定されたパスが見つかりません。 (0x3)
